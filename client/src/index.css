@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "spotify-circular";
+  src: url("https://open.scdn.co/fonts/CircularSpUIv3T-Book.woff2")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spotify-circular";
+  src: url("https://open.scdn.co/fonts/CircularSpUIv3T-Bold.woff2")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: spotify-circular, spotify-circular-cyrillic,
+    spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, Helvetica,
+    Arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2c3134;
+  color: #fff;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
