@@ -57,7 +57,6 @@ class Playlist extends Component {
     })
       .then(res => res.json())
       .then(response => {
-        console.log(response);
         this.setState({
           tracks: response.tracks.items
         });
@@ -68,6 +67,7 @@ class Playlist extends Component {
   deleteTrack = e => {
     let id = e.target.id;
     let index = e.target.value;
+    console.log(id, index);
     const { token, playlistId } = this.state;
     fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`, {
       method: "DELETE",
@@ -111,7 +111,7 @@ class Playlist extends Component {
                       value={idx}
                       onClick={this.deleteTrack}
                     >
-                      <b>Remove</b>
+                      Remove
                     </button>
                   </li>
                 ))}
